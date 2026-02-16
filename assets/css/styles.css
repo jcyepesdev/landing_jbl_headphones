@@ -769,6 +769,10 @@ i {
     align-content: center;
   }
 
+  .sponsor__container {
+    grid-template-columns: repeat(4, max-content);
+  }
+
   .swiper-button-prev {
     left: 20rem;
   }
@@ -959,4 +963,6 @@ i {
   .scrollup {
     inset-block-end: 4.8rem;
   }
+
+
 }

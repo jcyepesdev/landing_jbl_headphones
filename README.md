@@ -18,8 +18,7 @@ The project includes:
 
 ## 🚀 Live Demo
 
-[View Project](#)  
-[Source Code](#)
+[View Project](https://rad-capybara-451bf2.netlify.app/)  
 
 ---
 

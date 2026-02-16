@@ -137,3 +137,44 @@ const handleScroll = () => {
 
 /* Attach a single scroll listener for performance */
 window.addEventListener('scroll', handleScroll);
+
+
+/* ==========================================================
+   SCROLL REVEAL (ANIMATION)
+========================================================== */
+/* ==========================================================
+   SCROLL REVEAL (ANIMATION)
+========================================================== */
+// Prevent errors if ScrollReveal is not loaded
+if (typeof ScrollReveal !== 'undefined') {
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+        reset: true, // Enable if you want animations on every scroll
+    });
+
+    // Default reveal elements
+    const defaultReveal = [
+        '.home__social',
+        '.favorite__container',
+        '.sponsor__container',
+        '.footer',
+    ];
+
+    sr.reveal(defaultReveal.join(', '));
+
+    // Custom origin reveals
+    const customReveals = [
+        { selector: '.home__title span:nth-child(1)', options: { origin: 'left', opacity: 1 } },
+        { selector: '.home__title span:nth-child(3)', options: { origin: 'right', opacity: 1 } },
+        { selector: '.home__tooltip, .home__button, .model__button', options: { origin: 'bottom' } },
+        { selector: '.about__data', options: { origin: 'left' } },
+        { selector: '.about__img, .model__tooltip', options: { origin: 'right' } },
+    ];
+
+    customReveals.forEach(({ selector, options }) => {
+        sr.reveal(selector, options);
+    });
+}
