@@ -142,9 +142,6 @@ window.addEventListener('scroll', handleScroll);
 /* ==========================================================
    SCROLL REVEAL (ANIMATION)
 ========================================================== */
-/* ==========================================================
-   SCROLL REVEAL (ANIMATION)
-========================================================== */
 // Prevent errors if ScrollReveal is not loaded
 if (typeof ScrollReveal !== 'undefined') {
     const sr = ScrollReveal({
