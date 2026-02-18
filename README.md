@@ -18,7 +18,7 @@ The project includes:
 
 ## 🚀 Live Demo
 
-[View Project](https://rad-capybara-451bf2.netlify.app/)  
+[View Project](https://landing-jbl-headphones.netlify.app)  
 
 ---
 
